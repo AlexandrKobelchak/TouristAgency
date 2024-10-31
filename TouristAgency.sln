@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.Server", "Tou
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "TouristAgency.Client", "TouristAgency.Client\TouristAgency.Client.esproj", "{947285B3-C0B6-4498-9E00-AF6EB7A8C73A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TouristAgency.WebApp", "TouristAgency.WebApp", "{57346EFE-5D1F-4BE9-A58F-347514983B71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {146E6126-FC68-4478-8608-B7B766AFCDE7}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19D58254-63BB-455D-8B1D-A6930227857A} = {57346EFE-5D1F-4BE9-A58F-347514983B71}
+		{947285B3-C0B6-4498-9E00-AF6EB7A8C73A} = {57346EFE-5D1F-4BE9-A58F-347514983B71}
 	EndGlobalSection
 EndGlobal
