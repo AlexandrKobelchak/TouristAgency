@@ -3,11 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.Server", "TouristAgency.Server\TouristAgency.Server.csproj", "{19D58254-63BB-455D-8B1D-A6930227857A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouristAgency.Server", "TouristAgency.Server\TouristAgency.Server.csproj", "{19D58254-63BB-455D-8B1D-A6930227857A}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "TouristAgency.Client", "TouristAgency.Client\TouristAgency.Client.esproj", "{947285B3-C0B6-4498-9E00-AF6EB7A8C73A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TouristAgency.WebApp", "TouristAgency.WebApp", "{57346EFE-5D1F-4BE9-A58F-347514983B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.DatabaseContext", "TouristAgency.DatabaseContext\TouristAgency.DatabaseContext.csproj", "{CCA8A79A-5B52-430D-84D9-CF18E471DB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.Domain", "TouristAgency.Domain\TouristAgency.Domain.csproj", "{3CAB68CA-AC17-4813-BE4E-A346521B5842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.BLL", "TouristAgency.BLL\TouristAgency.BLL.csproj", "{C29D9D79-2391-4412-ACCD-59BDADCCFCB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.Entities", "TouristAgency.Entities\TouristAgency.Entities.csproj", "{ABA76F72-4AAC-45BF-9644-1E8C42327A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.Migrations", "TouristAgency.Migrations\TouristAgency.Migrations.csproj", "{00132476-365A-43BE-816E-0B6671BCF902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouristAgency.Repositories", "TouristAgency.Repositories\TouristAgency.Repositories.csproj", "{FD7AE8FA-501D-4844-B125-04DA9C0C741F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{FD4F98D9-0122-4A91-A43C-3AF89FF58CED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataDomain", "DataDomain", "{024923A8-1485-4085-AD57-92BA906BCDA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,15 +41,45 @@ Global
 		{947285B3-C0B6-4498-9E00-AF6EB7A8C73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{947285B3-C0B6-4498-9E00-AF6EB7A8C73A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{947285B3-C0B6-4498-9E00-AF6EB7A8C73A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CCA8A79A-5B52-430D-84D9-CF18E471DB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA8A79A-5B52-430D-84D9-CF18E471DB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA8A79A-5B52-430D-84D9-CF18E471DB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA8A79A-5B52-430D-84D9-CF18E471DB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CAB68CA-AC17-4813-BE4E-A346521B5842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAB68CA-AC17-4813-BE4E-A346521B5842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAB68CA-AC17-4813-BE4E-A346521B5842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAB68CA-AC17-4813-BE4E-A346521B5842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29D9D79-2391-4412-ACCD-59BDADCCFCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29D9D79-2391-4412-ACCD-59BDADCCFCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29D9D79-2391-4412-ACCD-59BDADCCFCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29D9D79-2391-4412-ACCD-59BDADCCFCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA76F72-4AAC-45BF-9644-1E8C42327A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA76F72-4AAC-45BF-9644-1E8C42327A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA76F72-4AAC-45BF-9644-1E8C42327A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA76F72-4AAC-45BF-9644-1E8C42327A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00132476-365A-43BE-816E-0B6671BCF902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00132476-365A-43BE-816E-0B6671BCF902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00132476-365A-43BE-816E-0B6671BCF902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00132476-365A-43BE-816E-0B6671BCF902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7AE8FA-501D-4844-B125-04DA9C0C741F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7AE8FA-501D-4844-B125-04DA9C0C741F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7AE8FA-501D-4844-B125-04DA9C0C741F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7AE8FA-501D-4844-B125-04DA9C0C741F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {146E6126-FC68-4478-8608-B7B766AFCDE7}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{19D58254-63BB-455D-8B1D-A6930227857A} = {57346EFE-5D1F-4BE9-A58F-347514983B71}
 		{947285B3-C0B6-4498-9E00-AF6EB7A8C73A} = {57346EFE-5D1F-4BE9-A58F-347514983B71}
+		{CCA8A79A-5B52-430D-84D9-CF18E471DB12} = {024923A8-1485-4085-AD57-92BA906BCDA3}
+		{3CAB68CA-AC17-4813-BE4E-A346521B5842} = {024923A8-1485-4085-AD57-92BA906BCDA3}
+		{C29D9D79-2391-4412-ACCD-59BDADCCFCB6} = {FD4F98D9-0122-4A91-A43C-3AF89FF58CED}
+		{ABA76F72-4AAC-45BF-9644-1E8C42327A1A} = {024923A8-1485-4085-AD57-92BA906BCDA3}
+		{00132476-365A-43BE-816E-0B6671BCF902} = {024923A8-1485-4085-AD57-92BA906BCDA3}
+		{FD7AE8FA-501D-4844-B125-04DA9C0C741F} = {024923A8-1485-4085-AD57-92BA906BCDA3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {146E6126-FC68-4478-8608-B7B766AFCDE7}
 	EndGlobalSection
 EndGlobal
