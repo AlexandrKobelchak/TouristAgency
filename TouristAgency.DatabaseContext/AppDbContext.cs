@@ -9,7 +9,7 @@ using TouristAgency.Entities.Identity;
 
 namespace TouristAgency.DatabaseContext
 {
-    public class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
+    public partial class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {

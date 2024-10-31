@@ -20,6 +20,9 @@ namespace TouristAgency.Server
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseMySQL(connStr,
                 optionBuilder => optionBuilder.MigrationsAssembly("TouristAgency.Migrations")));
+            
+            //command:
+            //add-migration StartMigration -context TouristAgency.DatabaseContext.AppDbContext -project TouristAgency.Migrations
 
             builder.Services.AddControllers();
 
