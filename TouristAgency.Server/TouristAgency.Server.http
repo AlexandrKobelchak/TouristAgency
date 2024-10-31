@@ -3,4 +3,11 @@
 GET {{TouristAgency.Server_HostAddress}}/weatherforecast/
 Accept: application/json
 
+
+
 ###
+
+
+GET {{TouristAgency.Server_HostAddress}}/api/TouristTag/
+Accept: application/json
+
