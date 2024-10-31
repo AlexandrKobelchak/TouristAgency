@@ -11,8 +11,8 @@ namespace TouristAgency.Entities
         [Column("firstName")]
         [MaxLength(64)]
         [Required]
-        public string TagName { get; set; }
-        public List<TouristProfileTag> ProfileTouristTag { get; set; }
-        public List<TouristProfile> TouristProfiles { get; set; }
+        public required string TagName { get; set; }
+        public List<TouristProfileTag>? ProfileTouristTag { get; set; }
+        public List<TouristProfile>? TouristProfiles { get; set; }
     }
 }

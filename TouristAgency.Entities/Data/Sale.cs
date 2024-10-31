@@ -9,9 +9,9 @@ namespace TouristAgency.Entities
     [Table("sales")]
     public class Sale: DbEntity
     {
-        public TouristProfile Tourist { get; set; }
-        public Employee Agent { get; set; }
-        public Tour Tour { get; set; }
+        public required TouristProfile Tourist { get; set; }
+        public required Employee Agent { get; set; }
+        public required Tour Tour { get; set; }
         
         [Column("beginDate")]
         public DateTime BeginDate { get; set; }
@@ -21,7 +21,7 @@ namespace TouristAgency.Entities
 
         [MaxLength(512)]
         [Column("description")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Column("touristId")]
         public Guid TouristId { get; set; }

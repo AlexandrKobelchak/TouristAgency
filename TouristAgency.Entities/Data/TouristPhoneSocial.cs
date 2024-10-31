@@ -7,8 +7,8 @@ namespace TouristAgency.Entities
 {
     public class TouristPhoneSocial
     {
-        public TouristPhone TouristPhone { get; set; }
-        public SocialNetwork SocialNetwork { get; set; }
+        public required TouristPhone TouristPhone { get; set; }
+        public required SocialNetwork SocialNetwork { get; set; }
 
         public Guid PhoneId { get; set; }
         public Guid SocialId { get; set; }

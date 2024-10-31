@@ -12,12 +12,12 @@ namespace TouristAgency.Entities
         [Column("firstName")]
         [MaxLength(128)]
         [Required]
-        public string FirstName { get; set; }
+        public required string FirstName { get; set; }
 
         [Column("lastName")]
         [MaxLength(128)]
         [Required]
-        public string LastName { get; set; }
+        public required string LastName { get; set; }
 
         [Column("middleName")]
         [MaxLength(128)]
@@ -41,25 +41,25 @@ namespace TouristAgency.Entities
         [Column("city")]
         [MaxLength(64)]
         [Required]
-        public string City { get; set; }
+        public required string City { get; set; }
 
         [Column("address")]
         [MaxLength(256)]
         [Required]
-        public string Address { get; set; }
+        public required string Address { get; set; }
 
         [Column("birthday")]        
         public DateTime Birthday { get; set; }
 
-        public List<TouristPhone> Phones { get; set; }
+        public List<TouristPhone>? Phones { get; set; }
 
 
-        public List<TouristProfileTag> ProfileTouristTag { get; set; }
-        public List<TouristTag> TouristTags { get; set; }
+        public List<TouristProfileTag>? ProfileTouristTag { get; set; }
+        public List<TouristTag>? TouristTags { get; set; }
 
 
-        public LegalPerson LegalPersonData { get; set; }
-        public IndividualPerson IndividualPersonData { get; set; }
-        public List<Sale> Sales { get; set; }
+        public LegalPerson? LegalPersonData { get; set; }
+        public IndividualPerson? IndividualPersonData { get; set; }
+        public List<Sale>? Sales { get; set; }
     }
 }

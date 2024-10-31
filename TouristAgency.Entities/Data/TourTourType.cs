@@ -8,10 +8,10 @@ namespace TouristAgency.Entities
     {
         [Column("tourTypeId")]
         public Guid TourTypeId { get; set; }
-        public TourType TourType { get; set; }
+        public required TourType TourType { get; set; }
 
         [Column("tourId")]
         public Guid TourId { get; set; }
-        public Tour Tour { get; set; }
+        public required Tour Tour { get; set; }
     }
 }

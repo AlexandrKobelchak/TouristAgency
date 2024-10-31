@@ -16,18 +16,18 @@ namespace TouristAgency.Entities
         
         [Column("fileName")]
         [MaxLength(260)]
-        public string FileName { get; set; }
+        public required string FileName { get; set; }
 
         [Column("original")]
         [MaxLength(260)]
-        public string OriginalFileName { get; set; }
+        public required string OriginalFileName { get; set; }
 
         [Column("mime")]
         [MaxLength(64)]
-        public string MimeType { get; set; }
+        public required string MimeType { get; set; }
         
         [Column("ext")]
         [MaxLength(32)]
-        public string FileExtention { get; set; }
+        public required string FileExtention { get; set; }
     }
 }

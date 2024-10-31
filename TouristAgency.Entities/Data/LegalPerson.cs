@@ -23,7 +23,7 @@ namespace TouristAgency.Entities
         [Column("name")]  
         [MaxLength(64)]
         [Required]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Код ЕДРПОУ
@@ -31,7 +31,7 @@ namespace TouristAgency.Entities
         [Column("edrpou")]
         [MaxLength(64)]
         [Required]
-        public string EDRPOU { get; set; }
+        public string? EDRPOU { get; set; }
 
         /// <summary>
         /// Имя руководителя
@@ -39,7 +39,7 @@ namespace TouristAgency.Entities
         [Column("bossName")]
         [MaxLength(128)]
         [Required]
-        public string BossName { get; set; }
+        public string? BossName { get; set; }
 
         /// <summary>
         /// Должность руководителя
@@ -47,7 +47,7 @@ namespace TouristAgency.Entities
         [Column("bossFunction")]
         [MaxLength(128)]
         [Required]
-        public string BossFunction { get; set; }
+        public string? BossFunction { get; set; }
 
         /// <summary>
         /// Расчетный счет
@@ -55,12 +55,12 @@ namespace TouristAgency.Entities
         [Column("paymentAccount")]
         [MaxLength(64)]
         [Required]
-        public string PaymentAccount { get; set; }
+        public string? PaymentAccount { get; set; }
 
         /// <summary>
         /// Банк
         /// </summary>      
-        public Bank Bank { get; set; }
+        public Bank? Bank { get; set; }
 
         [Column("bankId")] 
         [Required]

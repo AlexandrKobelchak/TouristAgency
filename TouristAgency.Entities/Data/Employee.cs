@@ -18,22 +18,22 @@ namespace TouristAgency.Entities
         [Column("firstName")]
         [MaxLength(128)]
         [Required]
-        public string FirstName { get; set; }
+        public required string FirstName { get; set; }
 
         [Column("lastName")]
         [MaxLength(128)]
         [Required]
-        public string LastName { get; set; }
+        public required string LastName { get; set; }
 
         [Column("middleName")]
         [MaxLength(128)]
-        public string MiddleName { get; set; }
+        public string? MiddleName { get; set; }
 
-        public Company Company { get; set; }
+        public required Company Company { get; set; }
         
         [Column("companyId")]
         public Guid CompanyId { get; set; }
       
-        public List<Sale> Sales { get; set; }
+        public List<Sale>? Sales { get; set; }
     }
 }

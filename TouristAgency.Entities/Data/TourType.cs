@@ -11,8 +11,8 @@ namespace TouristAgency.Entities
         [Column("name")]
         [MaxLength(128)]
         [Required]
-        public string TypeName { get; set; }
-        public List<TourTourType> TourTourType { get; set; }
-        public List<Tour> Tours { get; set; }
+        public required string TypeName { get; set; }
+        public List<TourTourType>? TourTourType { get; set; }
+        public List<Tour>? Tours { get; set; }
     }   
 }

@@ -11,7 +11,7 @@ namespace TouristAgency.Entities
         [Column("name")]
         [MaxLength(128)]
         [Required]
-        public string Name { get; set; }
+        public required string Name { get; set; }
         
         [Column("mfo")]
         [Required]
@@ -20,9 +20,9 @@ namespace TouristAgency.Entities
         [Column("city")]
         [MaxLength(16)]
         [Required]
-        public string City { get; set; }
+        public required string City { get; set; }
 
-        public List<Company> Companies { get; set; }
-        public List<LegalPerson> LegalPersons { get; set; }
+        public List<Company>? Companies { get; set; }
+        public List<LegalPerson>? LegalPersons { get; set; }
     }
 }

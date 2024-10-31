@@ -11,14 +11,14 @@ namespace TouristAgency.Entities
         [Column("name")]
         [MaxLength(128)]
         [Required]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         [Column("address")]
         [MaxLength(256)]
         [Required]
-        public string Address { get; set; }
+        public string? Address { get; set; }
 
-        public virtual List<Employee> Emploiees { get; set; }
+        public virtual List<Employee>? Emploiees { get; set; }
     }
 
   

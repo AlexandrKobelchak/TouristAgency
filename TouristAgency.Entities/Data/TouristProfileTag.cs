@@ -9,10 +9,10 @@ namespace TouristAgency.Entities
     {
         [Column("touristId")]
         public Guid TouristId { get; set; }
-        public TouristProfile TouristProfile { get; set; }
+        public required TouristProfile TouristProfile { get; set; }
 
         [Column("tagId")]
         public Guid TagId { get; set; }
-        public TouristTag TouristTag { get; set; }
+        public required TouristTag TouristTag { get; set; }
     }
 }

@@ -7,8 +7,8 @@ namespace TouristAgency.Entities
 {
     public class SocialNetwork:DbEntity
     {
-        public string Name { get; set; }
-        public List<TouristPhoneSocial> TPS { get; set; }
-        public List<TouristPhone> TouristPhones { get; set; }
+        public required string Name { get; set; }
+        public List<TouristPhoneSocial>? TPS { get; set; }
+        public List<TouristPhone>? TouristPhones { get; set; }
     }
 }

@@ -12,15 +12,15 @@ namespace TouristAgency.Entities
         [Column("phone")]
         [MaxLength(32)]
         [Required]
-        public string Phone { get; set; }
+        public required string Phone { get; set; }
 
         [Column("sendSMS")]
         public bool IsSMS { get; set; }
 
         [Column("touristId")]
         public Guid TouristProfileId { get; set; }
-        public TouristProfile Tourist { get; set; }
-        public List<TouristPhoneSocial> TPS { get; set; }
-        public List<SocialNetwork> SocialNetworks { get; set; }
+        public required TouristProfile Tourist { get; set; }
+        public List<TouristPhoneSocial>? TPS { get; set; }
+        public List<SocialNetwork>? SocialNetworks { get; set; }
     }
 }
