@@ -11,9 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TouristAgency.BLL\TouristAgency.BLL.csproj" />
     <ProjectReference Include="..\TouristAgency.Client\TouristAgency.Client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\TouristAgency.DatabaseContext\TouristAgency.DatabaseContext.csproj" />
+    <ProjectReference Include="..\TouristAgency.Domain\TouristAgency.Domain.csproj" />
+    <ProjectReference Include="..\TouristAgency.Entities\TouristAgency.Entities.csproj" />
+    <ProjectReference Include="..\TouristAgency.Migrations\TouristAgency.Migrations.csproj" />
+    <ProjectReference Include="..\TouristAgency.Repositories\TouristAgency.Repositories.csproj" />
   </ItemGroup>
 
   <ItemGroup>
