@@ -10,7 +10,7 @@ using TouristAgency.Entities.Identity;
 
 namespace TouristAgency.DatabaseContext
 {
-    public partial class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
+    public partial class AppDbContext : ApiAuthorizationDbContext<AppUser, AppRole, Guid>
     {
         protected override void OnModelCreating(ModelBuilder builder)
         {

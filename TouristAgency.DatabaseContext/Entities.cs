@@ -5,7 +5,7 @@ using TouristAgency.Entities.Identity;
 
 namespace TouristAgency.DatabaseContext
 {
-    public partial class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
+    public partial class AppDbContext : ApiAuthorizationDbContext<AppUser, AppRole, Guid>
     {
         public DbSet<Asset> Assets { get; set; }
         public DbSet<Tour> Tours { get; set; }

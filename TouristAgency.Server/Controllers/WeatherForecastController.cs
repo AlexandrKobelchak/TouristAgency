@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TouristAgency.Server.Controllers
 {
+
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

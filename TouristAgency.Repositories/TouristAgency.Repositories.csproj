@@ -22,4 +22,14 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TouristAgency.DatabaseContext\TouristAgency.DatabaseContext.csproj" />
+    <ProjectReference Include="..\TouristAgency.Domain\TouristAgency.Domain.csproj" />
+    <ProjectReference Include="..\TouristAgency.Entities\TouristAgency.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+
 </Project>
