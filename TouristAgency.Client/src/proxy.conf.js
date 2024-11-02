@@ -2,7 +2,7 @@ const PROXY_CONFIG = [
   {
     context: [
       "/weatherforecast",
-      "/api/ToutistTag",
+      "/api",
     ],
     target: "http://localhost:5032",
     secure: false
