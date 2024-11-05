@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "touristagency.client:build:production"
+              "buildTarget": "touristagency.client:build:production"
             },
             "development": {
-              "browserTarget": "touristagency.client:build:development"
+              "buildTarget": "touristagency.client:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "touristagency.client:build"
+            "buildTarget": "touristagency.client:build"
           }
         },
         "test": {
