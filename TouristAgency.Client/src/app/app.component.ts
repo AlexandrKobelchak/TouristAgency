@@ -3,9 +3,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {NavMenuComponent} from "./nav-menu/nav-menu.component";
 import {WeatherForecastComponent} from "./weather-forecast/weather-forecast.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  imports:[WeatherForecastComponent, NavMenuComponent, FontAwesomeModule],
+  imports:[WeatherForecastComponent, RouterOutlet, NavMenuComponent, FontAwesomeModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -14,5 +15,5 @@ import {WeatherForecastComponent} from "./weather-forecast/weather-forecast.comp
 export class AppComponent {
 
   faCoffee = faCoffee;
-  title = 'touristagency.client';
+  title = 'touristagency';
 }
