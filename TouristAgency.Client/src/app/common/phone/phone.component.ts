@@ -1,5 +1,5 @@
 import { Directive, Component, Inject, OnInit, Input, Output, EventEmitter, ElementRef, HostListener, forwardRef } from '@angular/core';
-import {CountryISO, PhoneNumberFormat, SearchCountryField} from "ngx-intl-tel-input";
+import {CountryISO, SearchCountryField} from "p-intl-input-tel";
 
 
 
@@ -22,7 +22,6 @@ export class PhoneComponent {
   separateDialCode = false;
   searchCountryField = SearchCountryField;
   countryISO = CountryISO;
-  phoneNumberFormat = PhoneNumberFormat;
   preferredCountries: CountryISO[] = [CountryISO.Russia, CountryISO.Ukraine];
 
 }

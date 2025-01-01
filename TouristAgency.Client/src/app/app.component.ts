@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import {NavMenuComponent} from "./nav-menu/nav-menu.component";
-import {WeatherForecastComponent} from "./weather-forecast/weather-forecast.component";
+import { NavMenuComponent } from "./nav-menu/nav-menu.component";
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  imports:[WeatherForecastComponent, RouterOutlet, NavMenuComponent, FontAwesomeModule],
+  imports:[RouterOutlet, NavMenuComponent, ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -14,6 +11,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  faCoffee = faCoffee;
   title = 'touristagency';
 }
