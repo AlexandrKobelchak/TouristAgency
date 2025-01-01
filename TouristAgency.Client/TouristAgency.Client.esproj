@@ -7,4 +7,8 @@
     <!-- Folder where production build objects will be placed -->
     <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist\touristagency.client\</PublishAssetsDirectory>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\common\" />
+    <Folder Include="src\common\" />
+  </ItemGroup>
 </Project>

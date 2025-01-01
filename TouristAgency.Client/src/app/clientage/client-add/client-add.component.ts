@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { IntlInputTelComponent} from 'p-intl-input-tel';
 @Component({
   selector: 'app-client-add',
   standalone: true,
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './client-add.component.css'
 })
 export class ClientAddComponent {
+
+
 
 }

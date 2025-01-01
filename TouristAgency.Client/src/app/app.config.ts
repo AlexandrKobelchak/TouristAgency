@@ -4,8 +4,8 @@ import { ApplicationConfig } from "@angular/core";
 // компоненты, которые сопоставляются с маршрутами
 import {HomePageComponent} from "./home-page/home-page.component";
 import {AboutPageComponent} from "./about-page/about-page.component";
-import {ClientAddComponent} from "./client-add/client-add.component";
-import {ClientFindComponent} from "./client-find/client-find.component";
+import {ClientAddComponent} from "./clientage/client-add/client-add.component";
+import {ClientFindComponent} from "./clientage/client-find/client-find.component";
 import {WeatherForecastComponent} from "./weather-forecast/weather-forecast.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import { provideHttpClient } from "@angular/common/http";
